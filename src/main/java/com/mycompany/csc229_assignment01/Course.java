@@ -35,12 +35,47 @@ package com.mycompany.csc229_assignment01;
 public class Course {
 
     private String name;
+    private String code;
+    private int ID;
 
+    // Default constructor
+    public Course() {
+        this.ID = 12012;
+        this.name = "Moaath";
+        this.code = "CSC229";
+    }
+
+    // Overloaded constructor with 3 parameters
+    public Course(int ID, String name, String code) {
+        this.ID = ID;
+        this.name = name;
+        this.code = code;
+    }
+
+    // Getter and setter methods for Name
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    // Getter and setter methods for ID
+    public int getID(){
+        return ID;
+    }
+
+    public void setID(int ID){
+        this.ID = ID;
+    }
+
+    // Getter and setter methods for Code
+    public String getCode(){
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 }
